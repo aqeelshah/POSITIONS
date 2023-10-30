@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+.nav-item{
+    border-right:2px solid yellow ;
+    margin-right: 3rem;
+    padding: 0;
+    margin-left: 0px;
+}
+.nav-link{
+    font-size: small;
+    padding: 1px;
+}
+.btn{
+    border: 2px solid black;
+    margin-right: 2rem;
+    padding: 0.375rem 0.75rem;
+    border-radius:4rem ;
+}
+.btn2{
+    border: 2px solid yellow;
+    margin-right: 2rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5rem;
+}
+.head1{
+    display: flex;
+    position: relative;
+    margin: 50px auto;
+    margin-left: 3.5rem;
+}
+.head1:before{
+content: " ";
+display: block;
+width: 120px;
+height: 2px;
+background: #000;
+position: absolute;
+right:0;
+top:50%;
+margin-right:30%;
+z-index: -2;
+}
+.head2{
+    margin-left: 3.5rem;
+    font-size: 300px;
+    margin-top: 40px;
+}
+.wrapper {
+    display: flex;
+     margin-left:5%;
+        position: relative;
+    }
+    .wrapper .child {
+        display: flex;
+        width: 90%;
+        height: 400px;
+        background: red;
+        margin: 10px;
+    }
+    .child-1{
+        display: flex;
+    max-width: 400px;
+    max-height: 400px;
+    position: absolute;
+        top: 150px;
+        left: 40px;
+        background: radial-gradient(yellow,darkorange) !important;
+      
+    }
+    .child-2{
+        display: flex;
+        max-width: 275px;
+    max-height:100px;
+    position: absolute;
+        top: 350px;
+        left: 50px;
+        background-color: rgb(5, 5, 5) !important;
+        
+    }
+    .child-3{
+        display: flex;
+        max-width: 380px;
+    max-height:100px;
+    position: absolute;
+        top: 1px;
+        left: 54%;
+        background-color: rgb(5, 5, 5) !important;
+        overflow: hidden;
+         
+    }
+    .child-4{
+        display: flex;
+        max-width: 300px;
+     max-height:250px;
+    position: absolute;
+        top: 3px;
+        left: 2px;
+        background-color: rgb(5, 5, 5) !important;
+    }
+    .child-5{
+        display: flex;
+        max-width: 300px;
+     max-height:250px;
+    position: absolute;
+        top: 300px;
+        left: 554px;
+        background-color: rgb(5, 5, 5) !important;
+    }
+
+    .child-6{
+        display: flex;
+        max-width:100%;
+   max-height:700px;
+    position: absolute;
+        top: 30px;
+        left: 70px;
+        background:linear-gradient(90deg,yellow, orange) !important;
+        display: flex;
+        position: relative;
+        
+    }
+    .img1{
+        position: absolute;
+        overflow: hidden;
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="head col-12">
+
+          <nav class="navbar navbar-expand-lg navbar-dark">
+           <a class="navbar-brand active" href="#"><img src="90.jpeg" alt="" style="margin-left: 40px;"></a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+               <a class="nav-link" href="#" style="color: rgb(16, 16, 16);">Home</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#" style="color: rgb(12, 12, 12);">Women</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#" style="color: rgb(13, 13, 13);">Men</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#" style="color: rgb(5, 5, 5);">Shipping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(5, 5, 5);">Offer</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(5, 5, 5);">FAQ</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(5, 5, 5);">Contacts</a>
+               </li>
+            </ul>
+            <div class="btn">Signup</div>
+            <div class="btn2">Login</div>
+         </nav>
+        </div>
+         <div class="col-4">
+         <div class="title1">
+            <div class="head1"><H3 style="font-size: 25px;"><span style="background: #fff;">New Trends</span></H3></div>
+            
+        </div>
+        <div class="head2">
+            <h1 style="font-size: 70px; "><span>Find the <br>Best of <br>Fashion</span></h1>
+        </div>
+        <div class="para">
+            <p style="margin-left: 3.5rem;">Lorem ipsum dolo sit amet,consectuse adipiscete elit,<br>sed diam nonummy nibh euismod ut laroot <br>dolor mangna elquiar erat voltur.</p>
+        </div>
+        <div class="btn3" style="display: flex;"><button style="background-color:rgb(250, 198, 67); border-radius: 4rem; margin-left: 3.5rem; padding: 0.375rem 0.7rem; border: none;"> BUY NOW</button></div>
+        </div>
+         <div class="wrapper col-7">
+        <div class="child child-1"></div>
+        <div class="child child-2"></div>
+        <div class="child child-3"></div>
+        <div class="child child-4"><img src="99.jpg" alt="" style="overflow: hidden;"></div>
+        <div class="child child-5"><img src="99.jpg" alt="" style="overflow: hidden;"></div>
+        <div class="child child-6">
+            <img src="66.png" alt="" style="overflow: hidden; margin-left: 10rem;">
+        </div>
+       
+        </div>
+         </div>
+        </div>
+       
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
